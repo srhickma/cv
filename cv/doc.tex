@@ -42,9 +42,11 @@
 % change alignment(C: center, L: left, R: right)
 \makecvheader
 
-% Print the footer with 3 arguments(<left>, <center>, <right>) Leave any of
-% these blank if they are not needed
+\ifcv
 \makecvfooter {\today} {Shane Hickman~~~·~~~Curriculum Vitae} {\thepage}
+\else
+\makecvfooter {\today} {Shane Hickman~~~·~~~Résumé} {}
+\fi
 
 \input{cv/skills.tex} \input{cv/experience.tex} \input{cv/projects.tex}
 \input{cv/education.tex} \nres{\input{cv/honors.tex}
