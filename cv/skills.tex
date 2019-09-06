@@ -1,14 +1,39 @@
 \cvsection{Skills}
 
+% Retreived from
+% https://tex.stackexchange.com/questions/412554/negative-phantom-does-not-work-exactly?rq=1
+\newcommand{\nhphantom}[1]{\setbox0=\hbox{#1}\hspace{-\the\wd0}}
+
 \begin{cvskills}
 
-  \cvskill {Languages} {Java, Rust, Go, Kotlin, C, C++, C\#, Scala, PHP,
-    JavaScript}
+  \cvskill {Languages \hphantom{Medium}\nhphantom{Strong}Strong} {Java, Rust,
+    Go, Kotlin, C, C++, C\#, SQL}
 
-  \cvskill {Technologies} {MySQL, MongoDB, REST, Hibernate, Spring, JUnit, JWT,
-    SocketIO, NGINX, MVC, Unity3D, JQuery}
+  \cvskill { Medium} {Scala, PHP, JavaScript, HTML, CSS, PBasic, Assembly,
+    MATLAB}
 
-  \cvskill {DevOps} {AWS, Ansible, gh-ost, Docker, Prometheus, Datadog, Git,
-    Gradle, UNIX, JWT}
+  \cvskill { \hphantom{Medium}\nhphantom{Limited}Limited} {NodeJS, Ruby, Python,
+    VHDL, BASH}
+  
+  \cvskill {} {}
+  
+  \cvskill {Server/Cloud} {REST, AWS, Heroku, NGINX, SocketIO, Spring, UNIX}
+
+  \cvskill {Database} {yugabyteDB, MongoDB, PostgreSQL, MySQL, Hibernate, JPA,
+    Diesel, gh-ost}
+
+  \cvskill {Security} {JWT, AES-CTR, HMAC, RSA, TLS, OpenSSH, OpenSSL}
+  
+  \cvskill {Deployment} {Ansible, Terraform, Docker, Kubernetes}
+ 
+  \cvskill {Build/CI} {Gradle, Maven, [C]Make, Jenkins, TravisCI, various code
+    coverage tools}
+
+  \cvskill {Monitoring} {Datadog, Prometheus, LogDNA, Sentry}
+
+  \cvskill {App Development} {Unity3D, Photon, UWP, Andrioid Studio, JavaFX,
+    Swing}
+
+  \cvskill {Editors} {Spacemacs, Visual Studio [Code], anything by JetBrains}
 
 \end{cvskills}

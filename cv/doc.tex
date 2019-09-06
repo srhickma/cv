@@ -48,7 +48,13 @@
 \makecvfooter {\today} {Shane Hickman~~~·~~~Résumé} {}
 \fi
 
-\input{cv/skills.tex} \input{cv/experience.tex} \input{cv/projects.tex}
+\ifcv
+\input{cv/skills.tex}
+\else
+\input{cv/rskills.tex}
+\fi
+
+\input{cv/experience.tex} \input{cv/projects.tex}
 \input{cv/education.tex} \nres{\input{cv/honors.tex}
   \input{cv/volunteering.tex}}
 
