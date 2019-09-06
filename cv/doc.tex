@@ -11,8 +11,7 @@
 
 \newcommand{\nres}[1]{ \ifcv #1 \fi }
 
-% A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
@@ -42,20 +41,12 @@
 % change alignment(C: center, L: left, R: right)
 \makecvheader
 
-\ifcv
-\makecvfooter {\today} {Shane Hickman~~~·~~~Curriculum Vitae} {\thepage}
-\else
-\makecvfooter {\today} {Shane Hickman~~~·~~~Résumé} {}
-\fi
+\ifcv \makecvfooter {\today} {Shane Hickman~~~·~~~Curriculum Vitae} {\thepage}
+\else \makecvfooter {\today} {Shane Hickman~~~·~~~Résumé} {} \fi
 
-\ifcv
-\input{cv/skills.tex}
-\else
-\input{cv/rskills.tex}
-\fi
+\ifcv \input{cv/skills.tex} \else \input{cv/rskills.tex} \fi
 
-\input{cv/experience.tex} \input{cv/projects.tex}
-\input{cv/education.tex} \nres{\input{cv/honors.tex}
-  \input{cv/volunteering.tex}}
+\input{cv/experience.tex} \input{cv/projects.tex} \input{cv/education.tex}
+\nres{\input{cv/honors.tex} \input{cv/volunteering.tex}}
 
 \end{document}

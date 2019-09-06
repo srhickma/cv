@@ -13,10 +13,10 @@
     \item Added support for Postgres role-based access control, ensuring
       consistency in a distributed environment.
     \item Designed and implemented a gflag-based configuration mechanism to make
-      Postgres configurable through YugaByte.
-    \item Added support for various \textit{ALTER TABLE} variants in Postgres.
-    \item Refactored post-test cleanup process to reduce flakiness and increase
-      test speed.
+      Postgres configurable through YugaByte. \nres{\item Added support for
+        various \textit{ALTER TABLE} variants in Postgres.} \nres{\item
+        Refactored post-test cleanup process to reduce flakiness and increase
+        test speed.}
     \item Contributor on multiple open-source projects at YugaByte, including
       \thinspace
       \href{https://github.com/YugaByte/yugabyte-db/commits?author=srhickma}{\color[HTML]{3090C7}{yugabyte-db
@@ -30,15 +30,14 @@
     \begin{cvitems}
     \item Architected an inter-server event framework using Amazon Kinesis and
       Protocol Buffers.
-    \item Implemented several complex email cadences to promote and notify users
-      of new features, with visualized A/B tests for subject lines and content.
     \item Designed and implemented APIs to support offline ordering,
       retailer-to-maker referrals, and out-of-stock products, contributing to
       user acquisition and an overall increase in sales.
-    \item Added web-hooks to push logged errors into Redshift, supporting more
-      complex error analysis.
-    \item Mentored and on-boarded new backend developers as the team nearly
-      doubled in size.
+    \item Implemented several complex email cadences to promote and notify users
+      of new features, with visualized A/B tests for subject lines and content.
+      \nres{\item Added web-hooks to push logged errors into Redshift,
+        supporting more complex error analysis.} \nres{\item Mentored and
+        on-boarded new backend developers as the team nearly doubled in size.}
     \item Integrated code coverage tracking into TravisCI to motivate better
       testing practices.
     \end{cvitems}
@@ -54,11 +53,10 @@
     \item Introduced stateless authentication and role-based authorization
       mechanism using JSON Web Tokens.
     \item Developed platform agnostic .NET web socket and http implementations
-      for multi-threaded API clients.
-    \item Wrote memory efficient Google Poly wrapper to rank and page results
-      based on keywords.
-    \item Added DevOps functionality through role-based authorization, metrics
-      (Prometheus + Grafana), and deployment scripts for all servers (Ansible).
+      for multi-threaded API clients. \nres{\item Wrote memory efficient Google
+        Poly wrapper to rank and page results based on keywords.}
+    \item Added DevOps functionality through metrics gathering (Prometheus +
+      Grafana), and deployment scripts (Ansible) for all servers.
     \end{cvitems}
   }
     
@@ -71,7 +69,11 @@
     \item Refactored the data extraction workflow to parallelize tasks, increase
       accuracy, and pave the way for future cost savings initiatives.
     \item Deployed metrics agents to monitor download speeds and cache
-      performance of satellite servers.
+      performance of satellite servers. \nres{\item Wrote and maintained POJOs
+        to facilitate json data transfer to and from computer vision software.}
+      \nres{\item Worked closely with computer vision team to determine
+        specifications and integration details of new software and the data
+        export API.}
     \end{cvitems}
   }
 
